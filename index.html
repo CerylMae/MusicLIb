@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Library</title>
+</head>
+<body>
+    <h2>Music Library</h2>
+    <div id="music-list"></div>
+
+    <script>
+        async function loadXML() {
+            let xmlResponse = await fetch("music.xml");
+            let xslResponse = await fetch("music.xsl");
+
+            let xml = await xmlResponse.text();
+            let xsl = await xslResponse.text();
+
+            let parser = new DOMParser();
+            let xmlDoc = parser.parseFromString(xml, "text/xml");
+            let xslDoc = parser.parseFromString(xsl, "text/xml");
+
+            let xsltProcessor = new XSLTProcessor();
+            xsltProcessor.importStylesheet(xslDoc);
+
+            let resultDocument = xsltProcessor.transformToFragment(xmlDoc, document);
+
+            document.getElementById("music-list").appendChild(resultDocument);
+        }
+
+        loadXML();
+    </script>
+</body>
+</html>

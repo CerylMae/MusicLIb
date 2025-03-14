@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="music.xsl"?>
+<music>
+    <song id="1">
+        <songTitle>Beyond the Stars</songTitle>
+        <artist>Galaxy Echo</artist>
+        <albums>
+            <album>Infinite Horizons</album>
+            <album>Celestial Voyage</album>
+            <album>Stellar Soundscape</album>
+        </albums>
+        <debutYear>2018</debutYear>
+    </song>
+    <song id="2">
+        <songTitle>Dreamscape</songTitle>
+        <artist>Midnight Melody</artist>
+        <albums>
+            <album>Nightfall Serenade</album>
+            <album>Moonlit Whispers</album>
+            <album>Twilight Symphony</album>
+        </albums>
+        <debutYear>2019</debutYear>
+    </song>
+    <song id="3">
+        <songTitle>Waves of Time</songTitle>
+        <artist>Oceanic Harmonics</artist>
+        <albums>
+            <album>Deep Blue Reflections</album>
+            <album>Aqua Dreams</album>
+            <album>Tidal Echoes</album>
+        </albums>
+        <debutYear>2020</debutYear>
+    </song>
+    <song id="4">
+        <songTitle>Neon Nights</songTitle>
+        <artist>Urban Pulse</artist>
+        <albums>
+            <album>City Lights</album>
+            <album>Electro Vibes</album>
+            <album>Metropolitan Dreams</album>
+        </albums>
+        <debutYear>2021</debutYear>
+    </song>
+    <song id="5">
+        <songTitle>Golden Memories</songTitle>
+        <artist>Retro Harmony</artist>
+        <albums>
+            <album>Time Capsule</album>
+            <album>80s Revival</album>
+            <album>Vintage Echoes</album>
+        </albums>
+        <debutYear>2022</debutYear>
+    </song>
+</music>
